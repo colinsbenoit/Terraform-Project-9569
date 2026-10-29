@@ -1,0 +1,12 @@
+# state files and local terraform directories
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+!example.tfvars
+.terraform.lock.hcl
+
+# SSH private keys if existing
+id_rsa
+id_rsa.pub

@@ -6,7 +6,7 @@ resource "azurerm_postgresql_flexible_server" "db" {
   administrator_login    = "psqladmin"
   administrator_password = "P@ssw0rd1234!"
   storage_mb             = 32768
-  sku_name               = "B_Standard_B2s"
+  sku_name               = "B_Standard_B1ms"
   zone                   = "3"
   tags                   = var.tags
 }

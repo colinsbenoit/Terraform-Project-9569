@@ -72,6 +72,7 @@ module "loadbalancer" {
 module "database" {
   source              = "./modules/database-9569"
   resource_group_name = module.rgroup.resource_group_name
-  location            = module.rgroup.location
+  location            = "canadacentral"
+  #location            = module.rgroup.location
   tags                = local.common_tags
 }
